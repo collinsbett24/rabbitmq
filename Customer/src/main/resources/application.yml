@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: customer
+
+    datasource:
+      username: 'blistered'
+      url: jdbc:mysql://localhost:2036/customer
+      password: '772Blisterd!'
+      jpa:
+        properties:
+          hibernate:
+            dialect:
+            format_sql: 'true'
+
+        hibernate:
+          ddl-auto: update
+        show-sql: 'true'
